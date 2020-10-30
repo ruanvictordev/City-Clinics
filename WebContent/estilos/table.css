@@ -1,0 +1,39 @@
+table, th, td {
+	border: 1px solid black;
+	border-collapse: collapse;
+	
+}
+th, td {
+	padding: 15px;
+}
+th{
+	text-align: left;
+}
+table {
+	margin-left: auto;
+    margin-right: auto;
+	border-spacing: 15px;
+}
+#t01 th {
+  background-color: #05afd3;
+  color: white;
+}
+#t01 tr:nth-child(even) {
+  background-color: #cdcdcd;
+}
+body {
+  width: 600px;
+  margin: 0 auto;
+  background-color: #ffffff;
+  padding: 0 20px 455px 20px;
+  border: 5px solid black;
+}
+h1 {
+  margin: 0;
+  padding: 20px 0;    
+  color: #00539F;
+  text-shadow: 2px 2px 1px black;
+}
+html {
+  background-color: #0077ce;
+}
