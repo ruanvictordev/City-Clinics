@@ -39,4 +39,18 @@ img {
   display: block;
   margin: 0 auto;
 }
+input {
+	width: 100%;
+	padding: 12px 20px;
+	margin: 8px 0;
+	box-sizing: border-box;
+	border: 2px solid black;
+	border-radius: 4px;
+	background-color: #ffffff;
+	color: black;
+}
+input:focus {
+	border: 3px solid #555;
+}
+
 
