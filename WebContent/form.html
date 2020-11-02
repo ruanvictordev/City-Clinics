@@ -1,0 +1,40 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
+<title>Cadastro</title>
+<link href="estilos/form.css" rel="stylesheet">
+</head>
+<body>
+	<h1>Cadastro</h1>
+	<form>
+		<!-- Campo de texto p/ Primeiro nome -->
+		<label for="pnome">Primeiro nome:</label><br>
+		<input type="text" id="pnome" name="pnome"><br>
+		<!-- Campo de texto p/ Último nome -->
+		<label for="unome">Último nome:</label><br>
+		<input type="text" id="unome" name="unome"><br>
+		<!-- Campo de texto p/ idade -->
+		<label for="idade">Idade:</label><br>
+		<input type="number" id="idade" name="idade"><br>
+		<!-- Caixa de seleção p/ sexo -->
+		<select>
+				<option value="m">Masculino</option>
+				<option value="f">Feminino</option>
+		</select>
+		<!-- Caixa de seleção p/ cidade -->
+		<label for="city">Cidade:</label><br>
+		<select id="city" name="Cidade">
+  		<option value="p2">Pedro II</option>
+  		<option value="pp">Piripiri</option>
+  		<option value="dm">Domingos mourão</option>
+  		</select>
+  		<!-- Área de texto p/ situação -->
+  		<label for="situation">Situação:</label><br>
+  		<textarea>Digite aqui...</textarea>
+		<input type="submit" value="Enviar">
+	</form>
+	<!-- Teste -->
+</body>
+</html>
