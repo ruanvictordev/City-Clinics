@@ -1,15 +1,35 @@
 <!DOCTYPE html>
 <html>
 <head>
-<meta charset="ISO-8859-1">
+<meta charset="utf-8">
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 <title>Sobre a City Clinics</title>
 <link href="estilos/estilo.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/menuscript.js"></script>
 </head>
 <body>
+	<nav id="menu">
+		<ul id="ul-principal">
+			<li class="li-p"><a href="m_home">HOME</a></li>
+			<li class="li-p"><a href="m_perfil">PERFIL</a></li>
+			<li class="li-p">
+				<a href="javascript://" class="bt1">SERVIÇOS<img class="seta" src="imagens/seta.png" width="15"></a>
+				<ul class="ul-servicos">
+					<li><a href="m_consultas">CONSULTAS</a></li>
+					<li><a href="m_clinicas">CLÍNICAS</a></li>
+					<li><a href="m_registros">REGISTROS</a></li>
+				</ul>
+			</li>
+			<li class="li-p"><a href="m_sobre">SOBRE</a></li>
+			<li class="li-p"><a href="m_faleconosco">FALE CONOSCO</a></li>
+		</ul>
+	</nav>
 	<h1>Sobre a City Clinics</h1>
 	<hr>
-	<img src="imagens/LogoCityClinics.png" style="height: 241px; width: 268px"alt="Logotipo City Clinics">
+	<div>
+		<img src="imagens/LogoCityClinics.png" style="height: 241px; width: 268px"alt="Logotipo City Clinics">
+	</div>
 	<h2>Nossa história desde 2020</h2>
 	<p>A City Clinics foi criada pensando na necessidade de atender seus pacientes de forma remota através da web, além de agendar suas consultas, oferecemos diversos serviços. </p>
 	<p>Com a City Clinics você pode:</p>
@@ -21,13 +41,5 @@
 	</ul>
 	<p>Este é um projeto puramente acadêmico como parte da disciplina de Programação Web do 3° ano do ensino técnico integrado ao médio do IFPI Campus Pedro II. Para saber mais informações sobre a instituição, acesse <a href="https://www.ifpi.edu.br" title="Site da página do IFPI"> o site do IFPI</a></p>
   
-	<h3>Faça já seu cadastro:</h3>
-	<form>
-		<label for="pnome">Primeiro nome:</label><br>
-		<input type="text" id="pnome" name="pnome"><br>
-		<label for="unome">Último nome:</label><br>
-		<input type="text" id="unome" name="unome"><br>
-		<input type="submit" value="Enviar">
-	</form>
 </body>
 </html>
