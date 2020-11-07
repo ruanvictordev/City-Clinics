@@ -18,7 +18,16 @@ table {
   	color: white;
 }
 #t01 tr:nth-child(even) {
-  	background-color: #cdcdcd;
+  	background-color: #e5e5e5;
+}
+#t01 tr:nth-child(odd){
+	background-color: white;
+}
+th, tr{
+	cursor: default;
+}
+#t01 tr:hover{
+	background-color: #d3dffe;
 }
 body {
   	width: 600px;

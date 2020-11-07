@@ -1,26 +1,52 @@
 html {
-	background-color: #0077ce;
+	background-color: white;
 }
-h1 {
-	font-size: 60px;
-	text-align: center;
-	margin: 0;
-  	padding: 20px 0;    
-  	color: #00539F;
-  	text-shadow: 3px 3px 1px black;
+*{
+	padding: 0px;
+	margin: 0px;
 }
-body {
-  	width: 700px;
-  	margin: 0 auto;
-  	background-color: #ffffff;
-  	padding: 0 20px 0 auto 20px;
-  	border: 3px solid black
+
+body{
+	font-family: arial;
+	
+}
+ul{
+	list-style: none;
+}
+a{
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 0px 20px;
+}
+a:hover{
+		background-color: rgba(255,255,255,.3);
+}
+nav{
+	background-color: #2492ff;
+	height: 50px;
+}
+ul#ul-principal{
+	background-color: blue;
+	width: 90%;
+	margin: auto;
+	position: relative;
+}
+.li-p{
+	line-height: 50px;
+	float: left;
+}
+ul li ul li{
+	background-color: #2492ff; 
+}
+.ul-servicos{
+	display: none;
+	position: absolute;
 }
 input {
-	display: block;
-	width: 70%;
+	width: 50%;
 	padding: 12px 20px;
-	margin: 0 auto;
+	margin: 12px;
 	box-sizing: border-box;
 	border: 2px solid black;
 	border-radius: 4px;
@@ -28,45 +54,28 @@ input {
 	color: black;
 	transition: width 0.4s ease-in-out;
 }
-input:focus {
-	width: 100%;
-	border: 3px solid #555;
-}
+
 label {
-	display: block;
-	text-align: center;
+	padding: 20px;
+	text-align: left;
 }
 input[value="Enviar"] {
 	width: 10%;
 	padding: 10px 10px;
 	border: none;
-	margin: 10px auto;
+	margin: 10px;
 	content: 0 5px;
 	background-color: green;
 	color: white;
 }
 select {
-	display: block;
   	width: 70%;
-  	margin: 0 auto;
+  	margin: 12px;
   	padding: 16px 20px;
   	border: 2px solid black;
   	border-radius: 4px;
   	background-color: #f1f1f1;
 }
-label[for="situation"] {
-	padding: 16px 20px;
-}
-textarea {
-	display: block;
-	margin: 0 auto;
-	width: 70%;
-	height: 150px;
-	padding: 12px 20px;
-	box-sizing: border-box;
-	border: 2px solid #ccc;
-	border-radius: 4px;
-	background-color: #f8f8f8;
-	font-size: 16px;
-	resize: none;
+h1{
+	padding: 25px;
 }
