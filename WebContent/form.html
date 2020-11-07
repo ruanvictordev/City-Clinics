@@ -5,8 +5,27 @@
 <link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
 <title>Cadastro</title>
 <link href="estilos/form.css" rel="stylesheet">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
+<script type="text/javascript" src="javascript/menucadastro.js"></script>
 </head>
 <body>
+	<nav id="menu">
+		<ul id="ul-principal">
+			<li class="li-p"><a href="m_home">HOME</a></li>
+			<li class="li-p"><a href="m_perfil">PERFIL</a></li>
+			<li class="li-p">
+				<a href="javascript://" class="bt1">SERVIÇOS<img class="seta" src="imagens/seta.png" width="15"></a>
+				<ul class="ul-servicos">
+					<li><a href="m_consultas">CONSULTAS</a></li>
+					<li><a href="m_clinicas">CLÍNICAS</a></li>
+					<li><a href="m_registros">REGISTROS</a></li>
+				</ul>
+			</li>
+			<li class="li-p"><a href="index.html">SOBRE</a></li>
+			<li class="li-p"><a href="m_faleconosco">FALE CONOSCO</a></li>
+		</ul>
+	</nav>
+	
 	<h1>Cadastro</h1>
 	<form>
 		<!-- Campo de texto p/ Primeiro nome -->
@@ -18,22 +37,6 @@
 		<!-- Campo de texto p/ idade -->
 		<label for="idade">Idade:</label><br>
 		<input type="number" id="idade" name="idade"><br>
-		<!-- Caixa de seleção p/ sexo -->
-		<select class="s_sexo">
-				<option value="m">Masculino</option>
-				<option value="f">Feminino</option>
-		</select>
-		<!-- Caixa de seleção p/ cidade -->
-		<label for="city">Cidade:</label><br>
-		<select id="city" name="Cidade">
-  		<option value="p2">Pedro II</option>
-  		<option value="pp">Piripiri</option>
-  		<option value="dm">Domingos mourão</option>
-  		</select>
-  		<!-- Área de texto p/ situação -->
-  		<label for="situation">Situação:</label><br>
-  		<textarea>Digite aqui...</textarea>
-		<input type="submit" value="Enviar">
 	</form>
 	<!-- Teste -->
 </body>
