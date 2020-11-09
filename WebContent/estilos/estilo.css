@@ -1,3 +1,15 @@
+body, html{
+	height: 768px;
+	margin: 0px;
+}
+img{
+	width: 100%;
+	background-repeat: no-repeat;
+	background-size: 100%;
+	background-position: center;
+	background-attachment: fixed;
+	box-shadow: 20px;
+}
 *{
 	padding: 0px;
 	margin: 0px;
@@ -11,6 +23,7 @@ ul{
 	list-style: none;
 }
 a{
+	font-size: 16px;
 	text-decoration: none;
 	color: white;
 	display: block;
@@ -36,27 +49,37 @@ ul#ul-principal{
 ul li ul li{
 	background-color: #2492ff; 
 }
-.ul-servicos{
-	display: none;
+#container figcaption{
 	position: absolute;
+	top: 145px;
+	left: 60px;
+	font-size: 40px;
+	color: white;
+	font-family: arial black;
 }
-img[class="seta"]{
-	padding: 0px 2px;
-}
-h1{
-	text-align: center;
-	margin: 10px 0px 10px;
-}
-div{
-	margin: 20px;
-	text-align:center;
-}
-p, li{
-	font-size: 16px;
-	line-height: 2;
-	letter-spacing: 1px;
+figure article figcaption h2{
+	font-family: arial;
+	font-size: 18px;
+	margin: 45px;
 }
 
+.btn{
+	font-family: arial;
+	font-weight: 700;
+	border: none;
+	margin: 0px 200px;
+	padding: 10px;
+	cursor: pointer;
+	display: inline-block;
+	text-decoration: none;
+	background: #2492ff;
+	color: white;
+	box-shadow:0 5px 0  #0073e6;
+}
+.btn:hover{
+	background-color: #48a4ff;
+}
 html{
+	font-size: 10px;
 	background-color: white;
 }
