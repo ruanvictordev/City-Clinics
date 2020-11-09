@@ -1,0 +1,67 @@
+body, html{
+	height: 768px;
+	margin: 0px;
+}
+*{
+	padding: 0px;
+	margin: 0px;
+}
+
+body{
+	font-family: arial;
+	
+}
+ul{
+	list-style: none;
+}
+a{
+	font-size: 16px;
+	text-decoration: none;
+	color: white;
+	display: block;
+	padding: 0px 20px;
+}
+a:hover{
+		background-color: rgba(255,255,255,.3);
+}
+nav{
+	background-color: #2492ff;
+	height: 50px;
+}
+ul#ul-principal{
+	background-color: blue;
+	width: 90%;
+	margin: auto;
+	position: relative;
+}
+.li-p{
+	line-height: 50px;
+	float: left;
+}
+ul li ul li{
+	background-color: #2492ff; 
+}
+
+h1{
+	text-align: center;
+	margin: 10px 0px 10px;
+}
+h2{
+	margin: 4px 40px;
+}
+div{
+	margin: 20px;
+	text-align:center;
+}
+p, li{
+	font-size: 16px;
+	line-height: 2;
+	letter-spacing: 1px;
+}
+p{
+	margin: 0.5px 40px;
+}
+ul[class="list"]{
+	margin: 0px 80px;
+	list-style: circle;
+}
