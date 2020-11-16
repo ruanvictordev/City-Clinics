@@ -23,6 +23,7 @@ main{
 }
 article{
 	flex: 5;
+	text-align: justify;
 }
 ul{
 	list-style: none;
