@@ -1,3 +1,6 @@
+/**
+Layout da página
+*/
 body, html{
 	height: 768px;
 	margin: 0px;
@@ -25,6 +28,20 @@ article{
 	flex: 5;
 	text-align: justify;
 }
+/**
+Menu de navegação
+*/
+nav{
+	background-color: #2492ff;
+	height: 50px;
+}
+nav form{
+	flex: 1;
+	display: flex;
+	align-items: center;
+	height: 100%;
+	padding: 0 2em;
+}
 ul{
 	list-style: none;
 }
@@ -38,17 +55,6 @@ nav a{
 nav a:hover{
 		background-color: rgba(255,255,255,.3);
 }
-nav{
-	background-color: #2492ff;
-	height: 50px;
-}
-nav form{
-	flex: 1;
-	display: flex;
-	align-items: center;
-	height: 100%;
-	padding: 0 2em;
-}
 nav form input{
 	font-size: 1.6rem;
 	height: 32px;
@@ -57,16 +63,21 @@ input[type="submit"]{
 	flex: 1;
 	margin-left: 1rem;
 	border: 0;
-	border-radius: 3px;
+	border-radius: 10px;
 	cursor: pointer;
 }
 input[type="search"]{
 	flex: 3;
 	border: 0;
-	border-radius: 3px;
+	border-radius: 10px;
 }
+/**
+Barra lateral
+(Conteúdo)
+*/
 aside{
 	flex: 2;
+	flex-direction: row;
 	margin-left: 10px;
 	background-color: #2492ff;
 	color: white;
