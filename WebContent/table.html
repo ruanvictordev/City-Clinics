@@ -6,6 +6,9 @@
 <link href="estilos/table.css" rel="stylesheet">
 </head>
 <body>
+	<header>
+		<h1> HEADER </h1>
+	</header>
 	<nav id="menu">
 		<ul id="ul-principal">
 			<li class="li-p"><a href="index.html">INÍCIO</a></li>
@@ -13,39 +16,49 @@
 			<li class="li-p"><a href="table.html">LISTAR CADASTRO</a></li>
 			<li class="li-p"><a href="sobre.html">SOBRE</a></li>
 		</ul>
+		<form>
+			<input type="search" name="a" placeholder="Procurar...">
+			<input type="submit" value="Ir">
+		</form>
 	</nav>
-	
-	<h1>Pacientes cadatrados</h1>
-	<hr>
-	<table id="t01">
-		<tr> <!-- Ficheiro base para substituir com valores -->
-			<th>Primeiro nome</th>
-			<th>Último nome</th>
-			<th>Idade</th>
-			<th>Sexo</th>
-			<th>Cidade</th>
-		</tr>
-		<tr>
-			<td>Ruan Victor</td>
-			<td>Carreiro Gomes</td>
-			<td>16</td>
-			<td>Masculino</td>
-			<td>Pedro II</td>
-		</tr>
-		<tr>
-			<td>Fulano</td>
-			<td>de Tal</td>
-			<td>28</td>
-			<td>Masculino</td>
-			<td>Piripiri</td>
-		</tr>
-		<tr>
-			<td>Cicrano</td>
-			<td>Beltrano</td>
-			<td>18</td>
-			<td>Masculino</td>
-			<td>Domingos mourão</td>
-		</tr>
-	</table>
+	<main>
+		<article>
+			<h2>Pacientes cadatrados</h2>
+			<hr>
+			<table id="t01">
+				<tr> <!-- Ficheiro base para substituir com valores (<td>)-->
+					<th>Primeiro nome</th>
+					<th>Último nome</th>
+					<th>Idade</th>
+					<th>Sexo</th>
+					<th>Cidade</th>
+				</tr>
+				<tr>
+					<td>Ruan Victor</td>
+					<td>Carreiro Gomes</td>
+					<td>16</td>
+					<td>Masculino</td>
+					<td>Pedro II</td>
+				</tr>
+				<tr>
+					<td>Fulano</td>
+					<td>de Tal</td>
+					<td>28</td>
+					<td>Masculino</td>
+					<td>Piripiri</td>
+				</tr>
+				<tr>
+					<td>Cicrano</td>
+					<td>Beltrano</td>
+					<td>18</td>
+					<td>Masculino</td>
+					<td>Domingos mourão</td>
+				</tr>
+			</table>
+			<footer>
+  				<p>&copy; Ruan Victor/Rian Soares</p>
+  			</footer>
+		</article>
+	</main>
 </body>
 </html>
