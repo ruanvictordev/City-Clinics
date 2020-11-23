@@ -1,4 +1,4 @@
-//Alerando imagem com um clique
+//Alterando imagem da logo com um clique
 let minhaImagem = document.querySelector('img');
 minhaImagem.onclick = function(){
 	let src = minhaImagem.getAttribute('src');
