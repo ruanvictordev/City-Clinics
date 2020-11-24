@@ -1,20 +1,8 @@
-body, html{
-	height: 768px;
-	margin: 0px;
-}
-img{
-	width: 100%;
-	background-repeat: no-repeat;
-	background-size: 100%;
-	background-position: center;
-	background-attachment: fixed;
-	box-shadow: 20px;
-}
 *{
 	padding: 0px;
 	margin: 0px;
+	box-sizing: border-box;;
 }
-
 body{
 	font-family: arial;
 	
@@ -49,37 +37,80 @@ ul#ul-principal{
 ul li ul li{
 	background-color: #2492ff; 
 }
-#container figcaption{
-	position: absolute;
-	top: 145px;
-	left: 60px;
-	font-size: 40px;
-	color: white;
-	font-family: arial black;
-}
-figure article figcaption h2{
-	font-family: arial;
-	font-size: 18px;
-	margin: 45px;
-}
 
-.btn{
-	font-family: arial;
-	font-weight: 700;
-	border: none;
-	margin: 0px 200px;
-	padding: 10px;
-	cursor: pointer;
-	display: inline-block;
-	text-decoration: none;
-	background: #2492ff;
+.content{
+	border-radius: 15px;
+	background-color: #a3d8f4;
 	color: white;
-	box-shadow:0 5px 0  #0073e6;
+	width: 80%;
+	height: 50%;
+	justify-content: space-between;
+	align-items: center;
+	position: relative;
 }
-.btn:hover{
-	background-color: #48a4ff;
-}
-html{
-	font-size: 10px;
+.container{
+	display: flex;
+	justify-content: center;
+	align-items: center;
+	height: 100vh;
+	position: relative;
 	background-color: white;
+}
+.content::before{
+	content: "";
+	position: absolute;
+	background-color: #2492ff;
+	width: 40%;
+	height: 100%;
+}
+.title{
+	color: #fff;
+	font-size: 22px;
+	font-weight: bold;
+	text-transform: capitalize;
+}
+.title-primary{
+	color: #fff;
+}
+.description{
+	font-size: 12px;
+	font-weight: 300;
+	color: #fff;
+	line-height: 30px;
+}
+.btn{
+	border-radius: 15px;
+	text-transform: uppercase;
+	color: #fff;
+	font-size: 10px;
+	padding: 10px 50px;
+	cursor: pointer;
+	font-weight: bold;
+}
+.btn-primary{
+	background-color: transparent;
+	border: 1px solid #fff;
+}
+.btn-primary:hover{
+	background-color: #fff;
+	color: #2492ff;
+}
+.first-colum{
+	text-align: center;
+	flex: 1 0 auto;
+	z-index: 10;
+}
+.second-colum{
+	flex: 2 0 auto;
+}
+.first-content{
+	display: flex;
+}
+.form{
+	display: flex;
+	flex-direction: column;
+}
+.second-content{
+	position: absolute;
+	display: none;
 }
