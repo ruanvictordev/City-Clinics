@@ -1,12 +1,12 @@
 <!DOCTYPE html>
-<html>
+<html lang=pt-br>
 <head>
-<meta charset="utf-8">
-<link href="https://fonts.googleapis.com/css2?family=Lato&display=swap" rel="stylesheet">
-<title>Sobre a City Clinics</title>
-<link href="estilos/estilo.css" rel="stylesheet">
-<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.10.2/jquery.min.js"></script>
-<script type="text/javascript" src="javascript/menuscript.js"></script>
+	<meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Login</title>
+    <link rel="stylesheet" href="estilos/estilo.css">
+    <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 </head>
 <body>
 	<nav id="menu">
@@ -17,46 +17,66 @@
 			<li class="li-p"><a href="sobre.html">SOBRE</a></li>
 		</ul>
 	</nav>
-	
-	<div class="container">  
-  		<div class="content first-content"> <!-- content principal -->
-  			<div class ="first-colum"> <!-- colum primária -->
-  				<h2 class="title title-primary">Bem-vindo de volta!</h2>
-  				<p class="description description-primary">Para manter-se conectado,</p>
-  				<p class="description description-primary">por favor, insira seus dados:</p>
-  				<button class="btn btn-primary">Sign in</button>
-  			</div> <!-- colum primária -->
-  			<div class ="second-colum"> <!-- colum secundária -->
-  				<h2 class="title title-second">Crie já sua conta</h2>
-  				<p class="description description-second">Preencha os campos abaixo:</p>
-  				<form class="form">
-  					<input type="text" placeholder="Nome completo">
-  					<input type="email" placeholder="E-mail">
-  					<input type="password" placeholder="Senha">
-  					<button class="btn btn-second">Sign up</button>
-  				</form>
-  			</div><!-- colum primária -->
-  		</div><!-- content principal -->
-		
-		<div class="content second-content"> <!-- content secundária -->
-			<div class="content first-content"> <!-- content principal -->
-  				<div class ="first-colum"> <!-- colum primária -->
-  					<h2 class="title">Olá!</h2>
-  					<p class="description">Adicione seus dados</p>
-  					<p class="description">e comece já sua experiência com a gente!</p>
-  					<button class="btn">Sign up</button>
-  				</div> <!-- colum primária -->
-  				<div class ="second-colum"> <!-- colum secundária -->
-  					<h2 class="title">Logue para acessar</h2>
-  					<form class="form">
-  						<input type="email" placeholder="E-mail">
-  						<input type="password" placeholder="Senha">
-  						<a href="#">Esqueçeu sua senha?</a>
-  						<button class="btn">Sign up</button>
-  					</form>
-  				</div><!-- colum primária -->
-  		</div><!-- content principal -->
-		</div>
-	</div>
+	<div class="container">
+        <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem vindo de volta!</h2>
+                <p class="description description-primary">Para se manter conectado,</p>
+                <p class="description description-primary">use seu login para acessar sua conta</p>
+                <button id="signin" class="btn btn-primary">Entrar</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Criar conta</h2>
+                <p class="description description-second">Use seu e-mail para se registrar:</p>
+                <form class="form">
+                    <label class="label-input" for="">
+                        <i class="far fa-user icon-modify"></i>
+                        <input type="text" placeholder="Nome Completo">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="E-mail">
+                    </label>
+                    
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                    
+                    
+                    <button class="btn btn-second">Criar</button>        
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Olá!</h2>
+                <p class="description description-primary">Informe seus dados</p>
+                <p class="description description-primary">e aproveite nosso serviço on-line!</p>
+                <button id="signup" class="btn btn-primary">Registrar</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Bem-vindo de volta!</h2>
+                <p class="description description-second">Ultilize seu e-mail para acessar sua conta:</p>
+                <form class="form">
+                
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="email" placeholder="E-mail">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" placeholder="Senha">
+                    </label>
+                
+                    <a class="password" href="#">Esqueceu sua senha?</a>
+                    <button class="btn btn-second">Entrar</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
+    <script src="javascript/login.js"></script>
 </body>
 </html>
