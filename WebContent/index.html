@@ -28,24 +28,23 @@
             <div class="second-column">
                 <h2 class="title title-second">Criar conta</h2>
                 <p class="description description-second">Use seu e-mail para se registrar:</p>
-                <form class="form">
-                    <label class="label-input" for="">
-                        <i class="far fa-user icon-modify"></i>
-                        <input type="text" placeholder="Nome Completo">
+                <form class="form" name="form" id="form">
+                    <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
+                        <i class="far fa-user icon-modify"></i> <!-- ícone do campo -->
+                        <input type="text" name="nome" id="nome" placeholder="Nome Completo" autocomplete="off" >
                     </label>
                     
-                    <label class="label-input" for="">
-                        <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="E-mail">
+                    <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
+                        <i class="far fa-envelope icon-modify"></i> <!-- ícone do campo -->
+                        <input type="text" id="contato"placeholder="E-mail ou Telefone" autocomplete="off">
                     </label>
                     
-                    <label class="label-input" for="">
-                        <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha">
+                    <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
+                        <i class="fas fa-lock icon-modify"></i> <!-- ícone do campo -->
+                        <input id="senha"type="password" placeholder="Senha" autocomplete="off">
                     </label>
                     
-                    
-                    <button class="btn btn-second">Criar</button>        
+                    <button type="submit" class="btn btn-second" name="botao">Criar</button>        
                 </form>
             </div><!-- second column -->
         </div><!-- first content -->
@@ -63,12 +62,12 @@
                 
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="email" placeholder="E-mail">
+                        <input type="text" placeholder="E-mail ou Telefone" autocomplete="off" required>
                     </label>
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha">
+                        <input type="password" placeholder="Senha" autocomplete="off" required>
                     </label>
                 
                     <a class="password" href="#">Esqueceu sua senha?</a>
