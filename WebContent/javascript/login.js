@@ -17,11 +17,13 @@ btnSignup.addEventListener("click", function () {
 let nome = document.getElementById('nome');
 let contato = document.getElementById('contato');
 let senha = document.getElementById('senha');
-let form = document.getElementById('form');
+let conf_senha = document.getElementById('conf_senha');
+
 
 form.addEventListener("submit", e=>{
 	e.preventDefault();
 	if(nome.value === ""){alert("O campo NOME COMPLETO não pode estar vazio!");}
-	if(contato.value === ""){alert("O campo EMAIL OU TELEFONE não pode estar vazio!")}
+	if(contato.value === ""){alert("O campo EMAIL OU TELEFONE não pode estar vazio!");}
 	if(senha.value.length < 8){alert("O campo SENHA precisa de no mínimo 8 caracteres!");}
+	if(senha.value != conf_senha.value){alert("Sua Senha e confirmação de senha não são iguais!");}
 })

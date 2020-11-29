@@ -28,15 +28,15 @@
             <div class="second-column">
                 <h2 class="title title-second">Criar conta</h2>
                 <p class="description description-second">Preencha os campos abaixo para se registrar:</p>
-                <form class="form" name="form" id="form">
+                <form class="form" id="form">
                     <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
                          <i class="far fa-user icon-modify"></i>	 <!-- ícone do campo -->
-                        <input type="text" name="nome" id="nome" placeholder=" Nome Completo" autocomplete="off" >
+                        <input type="text" id="nome" placeholder=" Nome Completo" autocomplete="off" >
                     </label>
                     
                     <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
                         <i class="far fa-envelope icon-modify"></i><!-- ícone do campo -->
-                        <input type="text" id="telefone" name="telefone" placeholder=" Telefone" autocomplete="off">
+                        <input type="text" id="contato" name="telefone" placeholder=" E-mail ou Telefone" autocomplete="off">
                     </label>
                     
                     <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
@@ -44,6 +44,10 @@
                         <input id="senha"type="password" placeholder=" Senha" autocomplete="off">
                     </label>
                     
+                    <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
+                        <i class="fas fa-lock icon-modify"></i> <!-- ícone do campo -->
+                        <input id="conf_senha" type="password" placeholder=" Confirmar Senha" autocomplete="off">
+                    </label>
                     <button type="submit" class="btn btn-second" name="botao">Criar</button>        
                 </form>
             </div><!-- second column -->
