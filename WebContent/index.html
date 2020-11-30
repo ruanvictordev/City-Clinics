@@ -48,7 +48,7 @@
                         <i class="fas fa-lock icon-modify"></i> <!-- ícone do campo -->
                         <input id="conf_senha" type="password" placeholder=" Confirmar Senha" autocomplete="off">
                     </label>
-                    <button type="submit" class="btn btn-second" name="botao">Criar</button>        
+                    <button type="submit" class="btn btn-second" name="botao" >Criar</button>        
                 </form>
             </div><!-- second column -->
         </div><!-- first content -->
@@ -62,20 +62,20 @@
             <div class="second-column">
                 <h2 class="title title-second">Bem-vindo de volta!</h2>
                 <p class="description description-second">Ultilize seu e-mail para acessar sua conta:</p>
-                <form class="form">
+                <form class="form" id="formlog">
                 
                     <label class="label-input" for="">
                         <i class="far fa-envelope icon-modify"></i>
-                        <input type="text" placeholder="E-mail ou Telefone" autocomplete="off" required>
+                        <input type="text" id="contatolog" placeholder="E-mail ou Telefone" autocomplete="off">
                     </label>
                 
                     <label class="label-input" for="">
                         <i class="fas fa-lock icon-modify"></i>
-                        <input type="password" placeholder="Senha" autocomplete="off" required>
+                        <input type="password" id="senhalog" placeholder="Senha" autocomplete="off">
                     </label>
                 
                     <a class="password" href="#">Esqueceu sua senha?</a>
-                    <button class="btn btn-second">Entrar</button>
+                    <button type="submit" class="btn btn-second">Entrar</button>
                 </form>
             </div><!-- second column -->
         </div><!-- second-content -->
