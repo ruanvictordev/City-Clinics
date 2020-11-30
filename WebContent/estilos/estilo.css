@@ -3,6 +3,7 @@
 	padding: 0px;
 	margin: 0px;
 	box-sizing: border-box;
+	font-family: 'Open Sans', sans-serif
 }
 ul{
 	list-style: none;
@@ -15,7 +16,9 @@ nav a{
 	padding: 0px 20px;
 }
 nav a:hover{
-		background-color: rgba(255,255,255,.3);
+		background-color: white;
+		color: #2492ff;
+		transition: background-color .5s;
 }
 nav{
 	background-color: #2492ff;
