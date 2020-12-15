@@ -22,6 +22,7 @@ http://www.tooplate.com/view/2098-health
      <link rel="stylesheet" href="css/animate.css">
      <link rel="stylesheet" href="css/owl.carousel.css">
      <link rel="stylesheet" href="css/owl.theme.default.min.css">
+     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
 
      <!-- MAIN CSS -->
      <link rel="stylesheet" href="css/tooplate-style.css">
@@ -317,61 +318,69 @@ http://www.tooplate.com/view/2098-health
 
      <!-- MAKE AN APPOINTMENT -->
      <section id="appointment" data-stellar-background-ratio="3">
-          <div class="container">
-               <div class="row">
-
-                    <div class="col-md-6 col-sm-6">
-                         <img src="images/appointment-image.jpg" class="img-responsive" alt="">
-                    </div>
-
-                    <div class="col-md-6 col-sm-6">
-                         <!-- CONTACT FORM HERE -->
-                         <form id="appointment-form" role="form" method="post" action="#">
-
-                              <!-- SECTION TITLE -->
-                              <div class="section-title wow fadeInUp" data-wow-delay="0.4s">
-                                   <h2>Faça um depoimento</h2>
-                              </div>
-
-                              <div class="wow fadeInUp" data-wow-delay="0.8s">
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="name">Nome Completo</label>
-                                        <input type="text" class="form-control" id="name" name="name" placeholder="Full Name">
-                                   </div>
-
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="email">Email</label>
-                                        <input type="email" class="form-control" id="email" name="email" placeholder="Your Email">
-                                   </div>
-
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="date">Data</label>
-                                        <input type="date" name="date" value="" class="form-control">
-                                   </div>
-
-                                   <div class="col-md-6 col-sm-6">
-                                        <label for="select">Selecione um Departamento</label>
-                                        <select class="form-control">
-                                             <option>Saúde Geral</option>
-                                             <option>Cardiologia</option>
-                                             <option>Dental</option>
-                                             <option>Pesquisa Médica</option>
-                                        </select>
-                                   </div>
-
-                                   <div class="col-md-12 col-sm-12">
-                                        <label for="telephone">Telefone</label>
-                                        <input type="tel" class="form-control" id="phone" name="phone" placeholder="Phone">
-                                        <label for="Message">Mensagem Adicional</label>
-                                        <textarea class="form-control" rows="5" id="message" name="message" placeholder="Message"></textarea>
-                                        <button type="submit" class="form-control" id="cf-submit" name="submit">Submit Button</button>
-                                   </div>
-                              </div>
-                        </form>
-                    </div>
-
-               </div>
-          </div>
+          <div class="container_re">
+            <div class="content first-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Bem vindo de volta!</h2>
+                <p class="description description-primary">Para se manter conectado,</p>
+                <p class="description description-primary">use seu login para acessar sua conta</p>
+                <button id="signin" class="btn btn-primary">Entrar</button>
+            </div>    
+            <div class="second-column">
+                <h2 class="title title-second">Criar conta</h2>
+                <p class="description description-second">Preencha os campos abaixo para se registrar:</p>
+                <form class="form" id="form">
+                    <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
+                         <i class="far fa-user icon-modify"></i>	 <!-- ícone do campo -->
+                        <input type="text" id="nome" placeholder=" Nome Completo" autocomplete="off" >
+                    </label>
+                    
+                    <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
+                        <i class="far fa-envelope icon-modify"></i><!-- ícone do campo -->
+                        <input type="text" id="contato" name="telefone" placeholder=" E-mail ou Telefone" autocomplete="off">
+                    </label>
+                    
+                    <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
+                        <i class="fas fa-lock icon-modify"></i> <!-- ícone do campo -->
+                        <input id="senha"type="password" placeholder=" Senha" autocomplete="off">
+                    </label>
+                    
+                    <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
+                        <i class="fas fa-lock icon-modify"></i> <!-- ícone do campo -->
+                        <input id="conf_senha" type="password" placeholder=" Confirmar Senha" autocomplete="off">
+                    </label>
+                    <button type="submit" class="btn btn-second" name="botao" >Criar</button>        
+                </form>
+            </div><!-- second column -->
+        </div><!-- first content -->
+        <div class="content second-content">
+            <div class="first-column">
+                <h2 class="title title-primary">Olá!</h2>
+                <p class="description description-primary">Informe seus dados</p>
+                <p class="description description-primary">e aproveite nosso serviço on-line!</p>
+                <button id="signup" class="btn btn-primary">Registrar</button>
+            </div>
+            <div class="second-column">
+                <h2 class="title title-second">Bem-vindo de volta!</h2>
+                <p class="description description-second">Ultilize seu e-mail para acessar sua conta:</p>
+                <form class="form" id="formlog">
+                
+                    <label class="label-input" for="">
+                        <i class="far fa-envelope icon-modify"></i>
+                        <input type="text" id="contatolog" placeholder="E-mail ou Telefone" autocomplete="off">
+                    </label>
+                
+                    <label class="label-input" for="">
+                        <i class="fas fa-lock icon-modify"></i>
+                        <input type="password" id="senhalog" placeholder="Senha" autocomplete="off">
+                    </label>
+                
+                    <a class="password" href="#">Esqueceu sua senha?</a>
+                    <button type="submit" class="btn btn-second">Entrar</button>
+                </form>
+            </div><!-- second column -->
+        </div><!-- second-content -->
+    </div>
      </section>
 
 
@@ -482,6 +491,6 @@ http://www.tooplate.com/view/2098-health
      <script src="js/smoothscroll.js"></script>
      <script src="js/owl.carousel.min.js"></script>
      <script src="js/custom.js"></script>
-
+     <script src="js/login.js"></script>
 </body>
 </html>
