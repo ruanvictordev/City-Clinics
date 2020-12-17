@@ -112,7 +112,7 @@ http://www.tooplate.com/view/2098-health
   .section-btn {
     background: #2492ff;
     border: 0;
-    border-radius: 3px;
+    border-radius: 15px;
     color: #ffffff;
     font-size: inherit;
     font-weight: 500;
@@ -331,7 +331,7 @@ http://www.tooplate.com/view/2098-health
 
   .navbar-default .navbar-nav li.appointment-btn a {
     background: #fff;
-    border-radius: 3px;
+    border-radius: 15px;
     color: #2492ff;
     font-weight: 600;
     padding-top: 12px;
