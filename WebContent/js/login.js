@@ -41,3 +41,4 @@ formlog.addEventListener("submit", e=>{
 	if(senhalog.value != senha.value){alert("Senha incorreta")}
 })
 
+
