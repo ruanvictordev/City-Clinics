@@ -565,8 +565,20 @@ http://www.tooplate.com/view/2098-health
     transform: translateY(0px);
     top: -22em;
   }
-
-
+  .remover{
+  	background: #2492ff;
+  	color: #fff;
+  	height: 25px;
+  	width: 30px;
+  	margin: 0 80px;
+  	border: none;
+  	border-radius: 3px;
+  }
+  .remover:hover{
+  	background: #fff;
+  	color: #2492ff;
+  	border: 1px solid #2492ff;
+  }
 
   /*---------------------------------------
      SERVICE              
