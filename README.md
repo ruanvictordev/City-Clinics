@@ -7,10 +7,7 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/">
-    <img src="images/sobrecityclinics.jpg" alt="Logo" width="937" height="368">
-  </a>
-
+ 
   <h3 align="center"><strong>Agendar consultas e acompanhar seu relatório (Controle das consultas, Clínicas cadastradas, Médicos cadastrados)</strong></h3>
 
   <p align="center">
