@@ -7,11 +7,6 @@
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
- 
-  <h3 align="center"><strong>Agendar consultas e acompanhar seu relatório (Controle das consultas, Clínicas cadastradas, Médicos cadastrados)</strong></h3>
-
-  <p align="center">
- <strong>Breve descrição do projeto</strong>
     <br />
     <a href="https://github.com/NICKNAME_DO_SEU_GITHUB"><strong>Veja outros programas »</strong></a>
     <br />
