@@ -1,7 +1,7 @@
 # City Clinics
 
 <!-- PROJECT SHIELDS -->
-[![Issues][issues-shield]][issues-url]
+[![Issues][issues-shield]][https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/issues]
 [![MIT License][license-shield]][license-url]
 
 <!-- PROJECT LOGO -->
