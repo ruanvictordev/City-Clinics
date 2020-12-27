@@ -8,10 +8,10 @@
 <br />
 <p align="center">
     <br />
-    <a href="https://github.com/NICKNAME_DO_SEU_GITHUB"><strong>Veja outros programas »</strong></a>
+    <a href="https://github.com/RuanCarreiroGomes"><strong>Veja outros programas »</strong></a>
     <br />
     <br />
-    <a href="https://github.com/NICKNAME_DO_SEU_GITHUB/NOME_DESSE_REPOSITORIO/issues">Reporte um Bug</a>
+    <a href="https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/issues">Reporte um Bug</a>
   </p>
 </p>
 
