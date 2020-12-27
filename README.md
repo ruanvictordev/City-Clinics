@@ -3,16 +3,15 @@
 <!-- PROJECT SHIELDS -->
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-[![LinkedIn][linkedin-shield]][linkedin-url]
 
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
-  <a href="URL_DO_SEU_PROJETO">
+  <a href="https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/">
     <img src="awesome-example.png" alt="Logo" width="937" height="368">
   </a>
 
-  <h3 align="center"><strong>Nome de definição do projeto (Controle de vendas, aplicação web, player de música)</strong></h3>
+  <h3 align="center"><strong>Agendar consultas e acompanhar seu relatório (Controle das consultas, Clínicas cadastradas, Médicos cadastrados)</strong></h3>
 
   <p align="center">
  <strong>Breve descrição do projeto</strong>
@@ -26,20 +25,21 @@
 
 ### Feito com
 
-O <strong>Nome de definição do projeto</strong> foi implementado usando esses recursos.
+A <strong>City Clinics</strong> foi implementada usando esses recursos.
 
-* [Java](https://www.oracle.com/java/) - <strong>Linguagem Usada (*JDK 9.0.4*)</strong>
-* [Linguagem 2](URL_DA_DOC_DA_LINGUAGEM_2) - <strong>Essa linguagem participou da criação de tal coisa</strong>
-* [JavaScript](URL_DA_DOC_DO_JS) - <strong>Usado para a criação de um front-end mais amigável.</strong> (*JFoenix 9*)
+* [Java](https://www.oracle.com/java/) - <strong>Linguagem Usada (*JDK 11*)</strong>
+* [Html](https://www.w3.org/TR/html52/) - <strong>Essa linguagem participou da criação da estrutura da página</strong>
+* [Css](https://www.w3c.br/divulgacao/guiasreferencia/css2/) - <strong>Essa linguagem participou da criação da estrutura da página</strong>
+* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - <strong>Usado para a criação de um front-end mais amigável.</strong>
 
 
 ### Instalação
 
 1. Clone o repositório
 ```sh
-https://github.com/NICKNAME_DO_SEU_GITHUB/NOME_DESSE_REPOSITORIO.git
+https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/
 ```
-2. Execute-o com o comando <strong>X</strong>
+2. Execute-o no navegador <strong>ruancarreirogomes.github.io/webcontent</strong>
 
 
 <!-- LICENSE -->
@@ -50,7 +50,7 @@ Distribuído pela MIT License. Consulte o arquivo `LICENSE.txt` para mais inform
 <!-- CONTACT -->
 ## Contato
 
-<strong>Seu nome - </strong> [SEU_EMAIL]
+<strong>Ruan Victor Carreiro Gomes - </strong> [ruanvictorp22111@gmail.com]
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
