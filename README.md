@@ -19,7 +19,6 @@
 
 A <strong>City Clinics</strong> foi implementada usando esses recursos.
 
-* [Java](https://www.oracle.com/java/) - <strong>Linguagem Usada (*JDK 11*)</strong>
 * [Html](https://www.w3.org/TR/html52/) - <strong>Essa linguagem participou da criação da estrutura da página</strong>
 * [Css](https://www.w3c.br/divulgacao/guiasreferencia/css2/) - <strong>Essa linguagem participou da criação do estilo da página</strong>
 * [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - <strong>Usado para a criação de um front-end mais amigável.</strong>
