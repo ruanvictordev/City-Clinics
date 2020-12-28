@@ -8,39 +8,39 @@
 <br />
 <p align="center">
     <br />
-    <a href="https://github.com/RuanCarreiroGomes"><strong>Veja outros programas »</strong></a>
+    <a href="https://github.com/RuanCarreiroGomes"><strong>See other programs»</strong></a>
     <br />
     <br />
-    <a href="https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/issues">Reporte um Bug</a>
+    <a href="https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/issues">Report a Bug</a>
   </p>
 </p>
 
-### Feito com
+### Done with
 
-A <strong>City Clinics</strong> foi implementada usando esses recursos.
+The <strong>City Clinics</strong> was implemented using these features.
 
-* [Html](https://www.w3.org/TR/html52/) - <strong>Essa linguagem participou da criação da estrutura da página</strong>
-* [Css](https://www.w3c.br/divulgacao/guiasreferencia/css2/) - <strong>Essa linguagem participou da criação do estilo da página</strong>
-* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - <strong>Usado para a criação de um front-end mais amigável.</strong>
+* [Html](https://www.w3.org/TR/html52/) - <strong>This language participated in the creation of the page structure</strong>
+* [Css](https://www.w3c.br/divulgacao/guiasreferencia/css2/) - <strong>This language participated in the creation of the page style</strong>
+* [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - <strong>Used to create a more user-friendly front end.</strong>
 
 
-### Instalação
+### Installation
 
-1. Clone o repositório
+1. Clone the repository
 ```sh
 https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/
 ```
-2. Execute-o no navegador <strong>ruancarreirogomes.github.io/webcontent</strong>
+2. Run it in the browser<strong>ruancarreirogomes.github.io/webcontent</strong>
 
 
 <!-- LICENSE -->
-## Licença
+## License
 
-Distribuído pela MIT License. Consulte o arquivo `LICENSE.txt` para mais informações.<br>
-Este template foi adaptado de Tooplate.com HTML Templates[https://www.tooplate.com/]
+Distributed by MIT License. See the file `LICENSE.txt` for more information.<br>
+This template was adapted from Tooplate.com HTML Templates[https://www.tooplate.com/]
 
 <!-- CONTACT -->
-## Contato dos desenvolvedores
+## Contact developers
 
 <strong>Ruan Victor Carreiro Gomes - </strong> [ruanvictorp22111@gmail.com] <br>
 <strong>Francisco Rian Soares de Oliveira - </strong> [riansoaresp2@gmail.com]
