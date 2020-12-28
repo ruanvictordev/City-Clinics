@@ -42,7 +42,7 @@ Distribuído pela MIT License. Consulte o arquivo `LICENSE.txt` para mais inform
 <!-- CONTACT -->
 ## Contato dos desenvolvedores
 
-<strong>Ruan Victor Carreiro Gomes - </strong> [ruanvictorp22111@gmail.com]
+<strong>Ruan Victor Carreiro Gomes - </strong> [ruanvictorp22111@gmail.com] <br>
 <strong>Francisco Rian Soares de Oliveira - </strong> [riansoaresp2@gmail.com]
 
 <!-- MARKDOWN LINKS & IMAGES -->
