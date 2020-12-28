@@ -40,9 +40,10 @@ https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/
 Distribuído pela MIT License. Consulte o arquivo `LICENSE.txt` para mais informações.
 
 <!-- CONTACT -->
-## Contato
+## Contato dos desenvolvedores
 
 <strong>Ruan Victor Carreiro Gomes - </strong> [ruanvictorp22111@gmail.com]
+<strong>Francisco Rian Soares de Oliveira - </strong> [riansoaresp2@gmail.com]
 
 <!-- MARKDOWN LINKS & IMAGES -->
 [issues-shield]: https://img.shields.io/github/issues/othneildrew/Best-README-Template.svg?style=flat-square
