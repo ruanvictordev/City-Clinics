@@ -37,7 +37,8 @@ https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/
 <!-- LICENSE -->
 ## Licença
 
-Distribuído pela MIT License. Consulte o arquivo `LICENSE.txt` para mais informações.
+Distribuído pela MIT License. Consulte o arquivo `LICENSE.txt` para mais informações.<br>
+Este template foi adaptado de <strong>Tooplate.com HTML Templates</strong>
 
 <!-- CONTACT -->
 ## Contato dos desenvolvedores
