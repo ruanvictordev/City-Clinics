@@ -18,7 +18,9 @@ flex-direction: column;
 .first-column h2{
 	margin-top: 50px;
 }
-
+#signup{
+    margin-bottom: 144px;
+}
 .first-content .second-column {
     z-index: 11;
     margin: 60px 0;
@@ -29,13 +31,17 @@ flex-direction: column;
    	height: 338px;
     border-top-left-radius: 15px;
     border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
     margin: 0 auto;
     left: 30%;
 }
 .sign-in-js .content::before {
     left: 30%;
-    border-top-right-radius: 15px;
-    border-top-left-radius: 15px;
+    top: 368px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+     border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
 }
 .container_re {
     margin: 200px 0;
@@ -95,27 +101,27 @@ flex-direction: column;
   @keyframes slidein {
 
     from {
-        left: 0;
+        left: 30%;
         width: 40%;
     }
 
     25% {
-        left: 5%;
-        width: 50%;
+        top: 5%;
+        width: 45%;
     }
 
     50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left: 45%;
+        top: 25%;
         width: 50%;
     }
 
+    75% {
+        top: 45%;
+        width: 55%;
+    }
+
     to {
-        left: 60%;
+        top: 60%;
         width: 40%;
     }
   }
@@ -123,27 +129,27 @@ flex-direction: column;
   @keyframes slideout {
 
     from {
-        left: 60%;
+        top: 60%;
         width: 40%;
     }
 
     25% {
-        left: 45%;
-        width: 50%;
+        top: 45%;
+        width: 45%;
     }
 
     50% {
-        left: 25%;
-        width: 60%;
-    }
-
-    75% {
-        left: 5%;
+        top: 25%;
         width: 50%;
     }
 
+    75% {
+        top: 5%;
+        width: 55%;
+    }
+
     to {
-        left: 0;
+        top: 0;
         width: 40%;
     }
 }
