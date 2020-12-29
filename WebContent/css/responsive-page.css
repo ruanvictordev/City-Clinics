@@ -3,3 +3,151 @@
 .img-responsive{
     width: 100%;
   }
+
+ @media screen and (max-width: 620px) {
+
+.second-content{
+flex-direction: column;
+background-color: #ccc;
+}
+
+.first-content{
+flex-direction: column;
+}
+
+.first-column h2{
+	margin-top: 50px;
+}
+
+.first-content .second-column {
+    z-index: 11;
+    margin: 60px 0;
+}
+
+.content::before {
+    width: 40%;
+   	height: 338px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    margin: 0 auto;
+    left: 30%;
+}
+.sign-in-js .content::before {
+    left: 30%;
+    border-top-right-radius: 15px;
+    border-top-left-radius: 15px;
+}
+.container_re {
+    margin: 200px 0;
+}
+
+/*Animação p/ conteúdo versão Mobile*/
+
+  @keyframes deslocamentoEsq {
+
+    from {
+        left: 0;
+        opacity: 1;
+        z-index: 12;
+    }
+
+    25% {
+        left: -80px;
+        opacity: .5;
+    }
+
+    50% {
+        left: -100px;
+        opacity: .2;
+	}
+
+    to {
+        left: -110px;
+        opacity: 0;
+        z-index: -1;
+    }
+  }
+
+
+  @keyframes deslocamentoDir {
+
+    from {
+        left: 0;
+        z-index: 12;
+    }
+
+    25% {
+        left: 80px;
+    }
+
+    50% {
+        left: 100px;
+    }
+
+    to {
+        left: 110px;
+        z-index: -1;
+    }
+  }
+
+
+  /*Animação*/
+  @keyframes slidein {
+
+    from {
+        left: 0;
+        width: 40%;
+    }
+
+    25% {
+        left: 5%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 45%;
+        width: 50%;
+    }
+
+    to {
+        left: 60%;
+        width: 40%;
+    }
+  }
+
+  @keyframes slideout {
+
+    from {
+        left: 60%;
+        width: 40%;
+    }
+
+    25% {
+        left: 45%;
+        width: 50%;
+    }
+
+    50% {
+        left: 25%;
+        width: 60%;
+    }
+
+    75% {
+        left: 5%;
+        width: 50%;
+    }
+
+    to {
+        left: 0;
+        width: 40%;
+    }
+}
+ }
+
+
+
