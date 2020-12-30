@@ -51,6 +51,7 @@ flex-direction: column;
     border-bottom-left-radius: 0px;
     margin: 0 auto;
     left: 30%;
+    
 }
 .sign-in-js .content::before {
     left: 30%;
@@ -80,25 +81,14 @@ flex-direction: column;
         width: 40%;
     }
 
-    40% {
+    25% {
         top: 30%;
-        width: 45%;
+        width: 40%;
     }
 
     50% {
         top: 45%;
-        width: 50%;
-    }
-
-    60% {
-        top: 50%;
-        width: 55%;
-    }
-
-
-    80% {
-        top: 55%;
-        width: 55%;
+        width: 40%;
     }
 
     to {
@@ -114,26 +104,15 @@ flex-direction: column;
         width: 40%;
     }
 
-    40% {
+    25% {
         top: 50%;
-        width: 45%;
+        width: 40%;
     }
 
     50% {
         top: 45%;
-        width: 50%;
+        width: 40%;
     }
-
-    60% {
-        top: 30%;
-        width: 55%;
-    }
-
-     80% {
-        top: 20%;
-        width: 55%;
-    }
-
 
     to {
         top: 0;
