@@ -1,0 +1,158 @@
+
+/*News images - fixing the images problems */
+.img-responsive{
+    width: 100%;
+}
+
+/*Fixing height problem with the form section */
+#appointment{
+height: 1000px;
+}
+ @media screen and (max-width: 768px) {
+/*Images*/
+.news-thumb, .team-thumb {
+   width: 80%;
+   margin: 25px auto;
+}
+#team .container > .row{
+	text-align: center;
+}
+.about-info{
+	width: 80%;
+    padding-right: 50px;
+    padding-bottom: 400px;
+}
+
+/*Form */
+.second-content{
+flex-direction: column;
+}
+.sign-in-js .second-content .first-column {
+    position: absolute;
+    top: 392px;
+}
+.first-content{
+flex-direction: column;
+}
+
+.first-column h2{
+	margin-top: 50px;
+}
+.first-content .second-column {
+    margin-top: 100px;
+    width: 670px;
+}
+
+.content::before {
+    width: 40%;
+   	height: 338px;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    border-bottom-left-radius: 0px;
+    margin: 0 auto;
+    left: 30%;
+}
+.sign-in-js .content::before {
+    left: 30%;
+    top: 368px;
+    border-top-right-radius: 0px;
+    border-top-left-radius: 0px;
+     border-bottom-right-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+/* animação do conteúdo  oculto pelo ::before no Mobile */
+  .sign-in-js .first-content .second-column {
+    opacity: 0;
+    transition: 0.4s;
+  }
+
+  .sign-up-js .second-content .second-column {
+    opacity: 0;
+    transition: 0.4s;
+  }
+
+  /*Animação*/
+  @keyframes slidein {
+
+    from {
+        top: 20%;
+        width: 40%;
+    }
+
+    40% {
+        top: 30%;
+        width: 45%;
+    }
+
+    50% {
+        top: 45%;
+        width: 50%;
+    }
+
+    60% {
+        top: 50%;
+        width: 55%;
+    }
+
+
+    80% {
+        top: 55%;
+        width: 55%;
+    }
+
+    to {
+        top: 60%;
+        width: 40%;
+    }
+  }
+
+  @keyframes slideout {
+
+    from {
+        top: 60%;
+        width: 40%;
+    }
+
+    40% {
+        top: 50%;
+        width: 45%;
+    }
+
+    50% {
+        top: 45%;
+        width: 50%;
+    }
+
+    60% {
+        top: 30%;
+        width: 55%;
+    }
+
+     80% {
+        top: 20%;
+        width: 55%;
+    }
+
+
+    to {
+        top: 0;
+        width: 40%;
+    }
+}
+ }
+
+@media screen and (max-width: 600px){
+#about{
+   background-position: 87% 400px;
+}
+.about-info{
+	text-align: center;
+	width: 90%;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 0 auto;
+}
+}
+
+
