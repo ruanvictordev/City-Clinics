@@ -1,17 +1,16 @@
 
-/*News images */
+/*News images - fixing the images problems */
 .img-responsive{
     width: 100%;
   }
+/*Fixing height problem with the form section */
 #appointment{
 height: 1000px;
-
 }
- @media screen and (max-width: 620px) {
+ @media screen and (max-width: 768px) {
 
 .second-content{
 flex-direction: column;
-background-color: #ccc;
 }
 .sign-in-js .second-content .first-column {
     position: absolute;
@@ -25,7 +24,7 @@ flex-direction: column;
 	margin-top: 50px;
 }
 .first-content .second-column {
-    margin: 60px 0;
+    margin-top: 100px;
     width: 670px;
 }
 
