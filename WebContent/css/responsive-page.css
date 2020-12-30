@@ -2,9 +2,14 @@
 /*News images - fixing the images problems */
 .img-responsive{
     width: 100%;
-  }
+}
 
-@media screen and (max-width: 768px) {
+/*Fixing height problem with the form section */
+#appointment{
+height: 1000px;
+}
+ @media screen and (max-width: 768px) {
+/*Images*/
 .news-thumb, .team-thumb {
    width: 80%;
    margin: 25px auto;
@@ -17,26 +22,8 @@
     padding-right: 50px;
     padding-bottom: 400px;
 }
-}
 
-@media screen and (max-width: 600px){
-#about{
-   background-position: 87% 400px;
-}
-.about-info{
-	text-align: center;
-	width: 90%;
-	padding-right: 10px;
-	padding-left: 10px;
-	margin: 0 auto;
-}
-}
-/*Fixing height problem with the form section */
-#appointment{
-height: 1000px;
-}
- @media screen and (max-width: 768px) {
-
+/*Form */
 .second-content{
 flex-direction: column;
 }
@@ -155,5 +142,17 @@ flex-direction: column;
 }
  }
 
+@media screen and (max-width: 600px){
+#about{
+   background-position: 87% 400px;
+}
+.about-info{
+	text-align: center;
+	width: 90%;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 0 auto;
+}
+}
 
 
