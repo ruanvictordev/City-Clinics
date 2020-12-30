@@ -3,6 +3,34 @@
 .img-responsive{
     width: 100%;
   }
+
+@media screen and (max-width: 768px) {
+.news-thumb, .team-thumb {
+   width: 80%;
+   margin: 25px auto;
+}
+#team .container > .row{
+	text-align: center;
+}
+.about-info{
+	width: 80%;
+    padding-right: 50px;
+    padding-bottom: 400px;
+}
+}
+
+@media screen and (max-width: 600px){
+#about{
+   background-position: 87% 400px;
+}
+.about-info{
+	text-align: center;
+	width: 90%;
+	padding-right: 10px;
+	padding-left: 10px;
+	margin: 0 auto;
+}
+}
 /*Fixing height problem with the form section */
 #appointment{
 height: 1000px;
