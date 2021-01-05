@@ -30,7 +30,7 @@ The <strong>City Clinics</strong> was implemented using these features.
 ```sh
 https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/
 ```
-2. Run it in the browser<strong>ruancarreirogomes.github.io/webcontent</strong>
+2. Open the index.html file in your browser
 
 
 <!-- LICENSE -->
