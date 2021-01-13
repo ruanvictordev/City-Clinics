@@ -3,10 +3,10 @@
 <!-- PROJECT SHIELDS -->
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
-
-![Login Desktop](https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif)
-![Login Mobile](https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif)
-
+<p display="flex">
+    ![Login Desktop](https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif)
+    ![Login Mobile](https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif)
+</p>
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
