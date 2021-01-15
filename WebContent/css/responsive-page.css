@@ -23,6 +23,10 @@
  }
 /*Form */
 @media screen and (max-width: 1040px){
+	#about{
+		background: none;
+		padding-bottom: 30px;
+	}
 	.content{
 		width: 100%;
 		height: 100%;
@@ -167,10 +171,6 @@
 	}
 }
 	
-	
-#about{
-   background-position: 87% 400px;
-}
 .about-info{
 	text-align: center;
 	width: 90%;

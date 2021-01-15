@@ -504,7 +504,12 @@ http://www.tooplate.com/view/2098-health
   /*---------------------------------------
       TEAM MEMBERS              
   -----------------------------------------*/
-
+  #team{
+  	padding-top: 30px;
+  }
+  #team .about-info{
+  	padding-bottom: 25px;
+  }
   .team-thumb {
     background-color: #f9f9f9;
     border-radius: 0 0 10px 10px;
