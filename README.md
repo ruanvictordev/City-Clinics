@@ -4,8 +4,8 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-<center>![Badge](https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif)</center>
-<center>![Badge](https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif)</center>
+<center><img src="https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif"></center>
+<center><img src="https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif"></center>
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
