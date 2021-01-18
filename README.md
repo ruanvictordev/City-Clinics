@@ -5,10 +5,8 @@
 [![MIT License][license-shield]][license-url]
 
 # What you can find in the system
-<p align="center">
-    <img src=”https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif” style="width: 60%;">
-    <img src=”https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif” style="width: 60%;">
-</p>
+<center>![Badge](https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif)</center>
+<center>![Badge](https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif)</center>
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
