@@ -6,8 +6,8 @@
 
 # What you can find in the system
 <p align="center">
-    <img src=”github.com/ruancarreirogomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif” style="width: 60%">
-    <img src=”github.com/ruancarreirogomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif” style="width: 60%; align: center">
+    <img src=”https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif” style="width: 60%;">
+    <img src=”https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif” style="width: 60%;">
 </p>
 <!-- PROJECT LOGO -->
 <br />
