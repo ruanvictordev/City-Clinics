@@ -5,10 +5,10 @@
 [![MIT License][license-shield]][license-url]
 
 # What you can find in the system
-
-<img src=”ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif” style="width: 60%">
-<img src=”ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif” style="width: 60%; align: center">
-
+<p align="center">
+    <img src=”github.com/ruancarreirogomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif” style="width: 60%">
+    <img src=”github.com/ruancarreirogomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif” style="width: 60%; align: center">
+</p>
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
