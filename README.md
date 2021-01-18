@@ -6,7 +6,8 @@
 
 # What you can find in the system
 
-![Login Desktop](https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif) ![Login Mobile](https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif)
+<img src=”ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif” style="width: 60%">
+<img src=”ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif” style="width: 60%; align: center">
 
 <!-- PROJECT LOGO -->
 <br />
