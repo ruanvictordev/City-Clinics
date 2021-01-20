@@ -4,10 +4,8 @@
 [![Issues][issues-shield]][issues-url]
 [![MIT License][license-shield]][license-url]
 
-# What you can find in the system
-
-![Login Desktop](https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif) ![Login Mobile](https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif)
-
+<center><img src="https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login.gif"></center>
+<center><img src="https://github.com/RuanCarreiroGomes/ruancarreirogomes.github.io/blob/main/WebContent/images/login2.gif"></center>
 <!-- PROJECT LOGO -->
 <br />
 <p align="center">
