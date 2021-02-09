@@ -166,25 +166,34 @@ http://www.tooplate.com/view/2098-health
 
                          <div class="clearfix"></div>
 
-                         <div id="clinicas" class="col-md-4 col-sm-6">
+                         <div id="clinicas" class="col-md-4 col-sm-6" v-for="clinica in clinics">
                               <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
                                    <a href="med-odonto-details.html" target="_blank"><img src=" " class="img-responsive" alt="Med Odonto"></a>
 
                                         <div id="div-clinicas" class="team-info">
-                                             <a href="med-odonto-details.html" target="_blank"><h3>Med Odonto</h3></a>
-                                             <p>Medicina e Odontologia</p>
+                                             <a href="med-odonto-details.html" target="_blank"><h3>{{clinica.nomeClinica}}</h3></a>
+                                             <p>{{clinica.descricaoClinica}}</p>
                                              <div>
-                                                  <button class="remover">X</button>
-                                                  <button class="remover alterar"><i class="fas fa-edit"></i></button>
+                                                  <button class="remover" @click.prevent="removeClinica(clinica.id)">X</button>
+                                                  <button class="remover alterar" @click.prevent="editaClinica(clinica)"><i class="fas fa-edit"></i></button>
                                              </div>
                                              <div class="team-contact-info">
-                                                  <p><i class="fa fa-phone"></i> 010-020-0120</p>
-                                                  <p><i class="fa fa-envelope-o"></i> <a href="#">general@company.com</a></p>
+                                                  <p><i class="fa fa-phone"></i>{{clinica.telefoneClinica}}</p>
+                                                  <p><i class="fa fa-envelope-o"></i> <a href="#">{{clinica.emailClinica}}</a></p>
                                              </div>
                                         </div>
 
                               </div>
                          </div>
+                         
+                         <form id="formulario" action="" target="_blank">
+                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome Da Clínica" required name="NomeClínica" autocomplete="off" v-model="clinica.nomeClinica"></p>
+                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Descrição Da Clínica" required name="Descricao" autocomplete="off" v-model="clinica.descricaoClinica"></p>
+                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Telefone Da Clínica" required name="Telefone" autocomplete="off" v-model="clinica.telefoneClinica"></p>
+                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="E-mail Da Clínica" name="Email" autocomplete="off" v-model="clinica.emailClinica"></p>
+                              <p><button v-if="!isEdit"class="w3-button w3-blue" type="submit" @click.prevent="saveClinic(clinica)">SALVAR</button></p>
+                              <p><button v-if="isEdit" class="w3-button w3-green" type="submit" @click.prevent="updateClinic(clinica)">ATUALIZAR</button></p>
+                         </form>
                     </div>
                </div>
           </section>
@@ -334,7 +343,6 @@ http://www.tooplate.com/view/2098-health
      </div>
           </section>
 
-
           <!-- GOOGLE MAP -->
           <section id="google-map">
           <!-- How to change your own map point
@@ -346,12 +354,11 @@ http://www.tooplate.com/view/2098-health
                <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d31823.133466361778!2d-41.47308908398907!3d-4.4312710564177396!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x7939aa9009b7f09%3A0xe6169cb9f64d3a98!2sPedro%20II%2C%20PI%2C%2064255-000!5e0!3m2!1spt-BR!2sbr!4v1608077625422!5m2!1spt-BR!2sbr" width="100%" height="450" frameborder="0" style="border:0;" allowfullscreen="" aria-hidden="false" tabindex="0"></iframe>
           </section>           
 
-
           <!-- FOOTER -->
           <footer data-stellar-background-ratio="5">
                <div class="container">
                     <div class="row">
-
+          
                          <div class="col-md-4 col-sm-4">
                               <div class="footer-thumb"> 
                                    <h4 class="wow fadeInUp" data-wow-delay="0.4s">Contato</h4>
@@ -362,8 +369,9 @@ http://www.tooplate.com/view/2098-health
                                    </div>
                               </div>
                          </div>
-
-                         <div class="col-md-4 col-sm-4"> 
+                         
+                         <div class="col-md-4 col-sm-4">
+                               
                               <div class="footer-thumb"> 
                                    <h4 class="wow fadeInUp" data-wow-delay="0.4s">Últimas nóticias</h4>
                                    <div class="latest-stories">
@@ -387,13 +395,6 @@ http://www.tooplate.com/view/2098-health
                                    </div>
                               </div>
                          </div>
-                         <form id="formulario" action="/action_page.php" target="_blank">
-                                   <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome Da Clínica" required name="NomeClínica" autocomplete="off" v-model="clinica.nomeClinica"></p>
-                                   <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Descrição Da Clínica" required name="Descricao" autocomplete="off" v-model="clinica.descricaoClinica"></p>
-                                   <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Telefone Da Clínica" required name="Telefone" autocomplete="off" v-model="clinica.telefoneClinica"></p>
-                                   <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="E-mail Da Clínica" name="Email" autocomplete="off" v-model="clinica.emailClinica"></p>
-                                   <p><button class="w3-button w3-blue" type="submit">SALVAR</button></p>
-                         </form>
                               
                               <!--
                          <div class="col-md-4 col-sm-4"> 
@@ -451,12 +452,67 @@ http://www.tooplate.com/view/2098-health
 	     let app = new Vue({
 		     el: "#app",
                data: {
+                    clinics: [],
                     clinica: {
+                         id: '',
                          nomeClinica: '',
                          descricaoClinica: '',
                          telefoneClinica: '',
                          emailClinica: '',
                          imagemClinica: ''
+                    },
+                    isEdit: false
+               },
+               created(){
+                    this.clinics = JSON.parse(localStorage.getItem('clinicsApp'));
+               },
+               methods: {
+                    saveClinic(clinica){
+                         //console.log(clinica)
+                         let clinics = localStorage.getItem('clinicsApp');
+                         clinica.id = new Date().getTime();
+                         if(clinics){
+                              //atulizar clinicas no localStorage
+                              clinics = JSON.parse(clinics);
+                              clinics.push(clinica);
+                         }else{
+                              clinics = [clinica]; //p/ novo cadastro
+                         }
+                         this.clinics = clinics;
+                         //ou atualizar localStorage independente de nova clínica ou nova adição
+                         localStorage.setItem('clinicsApp', JSON.stringify(clinics))
+
+                         location.reload();
+                    },
+                    removeClinica(clinicaId){
+                         let clinics = localStorage.getItem('clinicsApp');
+
+                         if (!clinics) return;
+
+                         clinics = JSON.parse(clinics);
+                         clinics = clinics.filter((clinica) => {
+                              return clinica.id != clinicaId;
+                         });
+                         this.clinics = clinics; //Atualiza o site automaticamente
+                         localStorage.setItem('clinicsApp', JSON.stringify(clinics));
+                    },
+                    editaClinica(clinica){
+                         this.clinica = clinica;
+                         this.isEdit = true;
+                    },
+                    updateClinic(clinica){
+                         let clinics = this.clinics.map(clinicaMap => {
+                              if (clinicaMap.id == clinica.id) {
+                                   return clinica;
+                              }
+
+                              return clinicaMap;
+                         });
+                         this.clinics = clinics;
+                         this.isEdit = false;
+                         localStorage.setItem('clinicsApp', JSON.stringify(clinics));
+
+                         location.reload();
                     }
                }
           });
