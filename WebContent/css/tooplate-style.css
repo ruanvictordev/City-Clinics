@@ -570,12 +570,15 @@ http://www.tooplate.com/view/2098-health
     transform: translateY(0px);
     top: -22em;
   }
+  .team-info div{
+  	display: flex;
+  }
   .remover{
   	background: #2492ff;
   	color: #fff;
   	height: 25px;
   	width: 30px;
-  	margin: 0 80px;
+  	margin: 0 2px;
   	border: none;
   	border-radius: 3px;
   }
