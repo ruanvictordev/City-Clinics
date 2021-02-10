@@ -168,7 +168,7 @@ http://www.tooplate.com/view/2098-health
 
                          <div id="clinicas" class="col-md-4 col-sm-6" v-for="clinica in clinics">
                               <div class="team-thumb wow fadeInUp" data-wow-delay="0.2s">
-                                   <a href="med-odonto-details.html" target="_blank"><img src=" " class="img-responsive" alt="Med Odonto"></a>
+                                   <a href="med-odonto-details.html" target="_blank">{{clinica.imagemClinica}}</a>
 
                                         <div id="div-clinicas" class="team-info">
                                              <a href="med-odonto-details.html" target="_blank"><h3>{{clinica.nomeClinica}}</h3></a>
@@ -191,6 +191,7 @@ http://www.tooplate.com/view/2098-health
                               <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Descrição Da Clínica" required name="Descricao" autocomplete="off" v-model="clinica.descricaoClinica"></p>
                               <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Telefone Da Clínica" required name="Telefone" autocomplete="off" v-model="clinica.telefoneClinica"></p>
                               <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="E-mail Da Clínica" name="Email" autocomplete="off" v-model="clinica.emailClinica"></p>
+                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="file" placeholder="Imagem Da Clínica" required name="ImagemClínica" autocomplete="off" v-model="clinica.imagemClinica"></p>
                               <p><button v-if="!isEdit"class="w3-button w3-blue" type="submit" @click.prevent="saveClinic(clinica)">SALVAR</button></p>
                               <p><button v-if="isEdit" class="w3-button w3-green" type="submit" @click.prevent="updateClinic(clinica)">ATUALIZAR</button></p>
                          </form>
