@@ -1,14 +1,12 @@
+  
 <!DOCTYPE html>
 <html lang="en">
 <head>
 	 <link rel="shortcut icon" href="images/favicon.ico" type="image/x-icon"> 
      <title>City Clinics</title>
 <!--
-
 Template 2098 Health
-
 http://www.tooplate.com/view/2098-health
-
 -->
      <meta charset="UTF-8">
      <meta http-equiv="X-UA-Compatible" content="IE=Edge">
@@ -191,7 +189,7 @@ http://www.tooplate.com/view/2098-health
                               <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Descrição Da Clínica" required name="Descricao" autocomplete="off" v-model="clinica.descricaoClinica"></p>
                               <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Telefone Da Clínica" required name="Telefone" autocomplete="off" v-model="clinica.telefoneClinica"></p>
                               <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="E-mail Da Clínica" name="Email" autocomplete="off" v-model="clinica.emailClinica"></p>
-                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="file" placeholder="Imagem Da Clínica" required name="ImagemClínica" autocomplete="off" v-model="clinica.imagemClinica"></p>
+                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="file" placeholder="Imagem Da Clínica" required name="ImagemClínica" autocomplete="off" v-on="clinica.imagemClinica"></p>
                               <p><button v-if="!isEdit"class="w3-button w3-blue" type="submit" @click.prevent="saveClinic(clinica)">SALVAR</button></p>
                               <p><button v-if="isEdit" class="w3-button w3-green" type="submit" @click.prevent="updateClinic(clinica)">ATUALIZAR</button></p>
                          </form>
@@ -459,7 +457,7 @@ http://www.tooplate.com/view/2098-health
                          descricaoClinica: '',
                          telefoneClinica: '',
                          emailClinica: '',
-                         imagemClinica: ''
+                         imagemClinica: null
                     },
                     isEdit: false
                },
