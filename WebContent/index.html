@@ -291,24 +291,24 @@ http://www.tooplate.com/view/2098-health
                     <form class="form" id="form">
                          <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
                               <i class="far fa-user icon-modify"></i>	 <!-- ícone do campo -->
-                         <input type="text" id="nome" placeholder=" Nome Completo" autocomplete="off" >
+                         <input type="text" id="nome" placeholder=" Nome Completo" autocomplete="off" v-model="log.nomeUsuario">
                          </label>
                          
                          <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
                          <i class="far fa-envelope icon-modify"></i><!-- ícone do campo -->
-                         <input type="text" id="contato" name="telefone" placeholder=" E-mail ou Telefone" autocomplete="off">
+                         <input type="text" id="contato" name="telefone" placeholder=" E-mail ou Telefone" autocomplete="off" v-model="log.contatoUsuario">
                          </label>
                          
                          <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
                          <i class="fas fa-lock icon-modify"></i> <!-- ícone do campo -->
-                         <input id="senha"type="password" placeholder=" Senha" autocomplete="off">
+                         <input id="senha"type="password" placeholder=" Senha" autocomplete="off" v-model="log.senhaUsuario">
                          </label>
                          
                          <label class="label-input" for=""><!-- label para identar o icone ao lado do campo, em linha -->
                          <i class="fas fa-lock icon-modify"></i> <!-- ícone do campo -->
-                         <input id="conf_senha" type="password" placeholder=" Confirmar Senha" autocomplete="off">
+                         <input id="conf_senha" type="password" placeholder=" Confirmar Senha" autocomplete="off" v-model="log.confsenhaUsuario">
                          </label>
-                         <button type="submit" class="btn_log btn-second" name="botao" >Criar</button>        
+                         <button type="submit" class="btn_log btn-second" name="botao" @click.prevent="cadastraUsuario(log)">Criar</button>        
                     </form>
                </div><!-- second column -->
           </div><!-- first content -->
@@ -335,7 +335,7 @@ http://www.tooplate.com/view/2098-health
                          </label>
                     
                          <a class="password" href="#">Esqueceu sua senha?</a>
-                         <button type="submit" class="btn_log btn-second">Entrar</button>
+                         <button type="submit" class="btn_log btn-second" @click.prevent="logaUsuario(log)">Entrar</button>
                     </form>
                </div><!-- second column -->
           </div><!-- second-content -->
@@ -459,10 +459,19 @@ http://www.tooplate.com/view/2098-health
                          emailClinica: '',
                          imagemClinica: null
                     },
+                    logs: [],
+                    log: {
+                         id: '',
+                         nomeUsuario: '',
+				     contatoUsuario: '',
+				     senhaUsuario: '',
+				     confsenhaUsuario: '',
+                    },
                     isEdit: false
                },
                created(){
                     this.clinics = JSON.parse(localStorage.getItem('clinicsApp'));
+                    this.logs = JSON.parse(localStorage.getItem('logsApp'));
                },
                methods: {
                     saveClinic(clinica){
@@ -472,7 +481,6 @@ http://www.tooplate.com/view/2098-health
 		                    window.alert('Preencha todos os campos');
 	                    }else{
                
-                                
                               //console.log(clinica)
                               let clinics = localStorage.getItem('clinicsApp');
                               clinica.id = new Date().getTime();
@@ -519,6 +527,44 @@ http://www.tooplate.com/view/2098-health
                          localStorage.setItem('clinicsApp', JSON.stringify(clinics));
 
                          location.reload();
+                    },
+                    
+                    //Cadastro
+                    cadastraUsuario(log){
+                         if(log.nomeUsuario == '' || log.contatoUsuario == '' || log.senhaUsuario == ''|| log.confsenhaUsuario == ''){
+                              window.alert('Preencha todos os campos!');
+                         }
+                         if (log.senhaUsuario.length < 8) {
+                              window.alert('Sua senha deve ter no mínimo 8 caractéres')
+                         }
+                         if (log.senhaUsuario != log.confsenhaUsuario) {
+                              window.alert('Sua senha e confirmação de senha são diferentes!')
+                         }
+                         if (log.nomeUsuario != '' && log.contatoUsuario != '' && log.senhaUsuario != ''&& log.confsenhaUsuario != '' && log.senhaUsuario.length >= 8) {
+                              let logs = localStorage.getItem('logsApp');
+                              log.id = new Date().getTime();
+                              if (logs) {
+                                   //atulizar clinicas no localStorage
+                                   logs = JSON.parse(logs);
+                                   logs.push(log);
+                              }else{
+                                   logs = [log]; //p/ novo cadastro
+                              }    
+                              this.logs = logs;
+                              //ou atualizar localStorage independente de nova clínica ou nova adição
+                              localStorage.setItem('logsApp', JSON.stringify(logs));
+                                   
+                              window.alert('Cadastro realizado com sucesso!');    
+                         }
+                    },
+                    logaUsuario(log){
+                         let senha = document.getElementById('senhalog');
+                         let contato = document.getElementById('contatolog');
+                         if (log.senhaUsuario != senha && log.contatoUsuario != contato) {
+                              window.alert('Nenhum usuário encontrado com estes dados!');
+                         }else{
+                              window.alert('Seja bem-vindo'+log.nomeUsuario+'!')
+                         }
                     }
                }
           });
