@@ -185,11 +185,11 @@ http://www.tooplate.com/view/2098-health
                          </div>
                          
                          <form id="formulario" action="" target="_blank">
-                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome Da Clínica" required name="NomeClínica" autocomplete="off" v-model="clinica.nomeClinica"></p>
-                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Descrição Da Clínica" required name="Descricao" autocomplete="off" v-model="clinica.descricaoClinica"></p>
-                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Telefone Da Clínica" required name="Telefone" autocomplete="off" v-model="clinica.telefoneClinica"></p>
+                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Nome Da Clínica" name="NomeClínica" autocomplete="off" v-model="clinica.nomeClinica" required onkeypress="return event.charCode > 64 && event.charCode < 91 || event.charCode > 96 && event.charCode < 123"></p>
+                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Descrição Da Clínica" name="Descricao" autocomplete="off" v-model="clinica.descricaoClinica" required onkeypress="return event.charCode > 64 && event.charCode < 91 || event.charCode > 96 && event.charCode < 123"></p>
+                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="Telefone Da Clínica(apenas números)" name="Telefone" autocomplete="off" v-model="clinica.telefoneClinica" required="required" onkeypress="return event.charCode >= 48 && event.charCode <= 57"></p>
                               <p><input id="input"class="w3-input w3-padding-16 w3-border" type="text" placeholder="E-mail Da Clínica" name="Email" autocomplete="off" v-model="clinica.emailClinica"></p>
-                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="file" placeholder="Imagem Da Clínica" required name="ImagemClínica" autocomplete="off" v-on="clinica.imagemClinica"></p>
+                              <p><input id="input"class="w3-input w3-padding-16 w3-border" type="file" placeholder="Imagem Da Clínica" name="ImagemClínica" autocomplete="off" v-on="clinica.imagemClinica" required></p>
                               <p><button v-if="!isEdit"class="w3-button w3-blue" type="submit" @click.prevent="saveClinic(clinica)">SALVAR</button></p>
                               <p><button v-if="isEdit" class="w3-button w3-green" type="submit" @click.prevent="updateClinic(clinica)">ATUALIZAR</button></p>
                          </form>
@@ -466,6 +466,18 @@ http://www.tooplate.com/view/2098-health
                },
                methods: {
                     saveClinic(clinica){
+                         if (clinica.nomeClinica == '') {
+		                    window.alert('Preencha o campo "Nome Da Clínica"');
+	                    }
+                         if (clinica.descricaoClinica == '') {
+		                    window.alert('Preencha o campo "Descrição Da Clínica"');
+	                    }
+                         if (clinica.telefoneClinica == '') {
+		                    window.alert('Preencha o campo "Telefone Da Clínica"');
+	                    }
+                         if (clinica.nomeClinica == '') {
+		                    window.alert('Preencha o campo "Nome Da Clínica"');
+                         }       
                          //console.log(clinica)
                          let clinics = localStorage.getItem('clinicsApp');
                          clinica.id = new Date().getTime();
