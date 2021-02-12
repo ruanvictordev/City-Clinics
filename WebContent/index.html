@@ -325,13 +325,13 @@ http://www.tooplate.com/view/2098-health
                     <form class="form" id="formlog">
                     
                          <label class="label-input" for="">
-                         <i class="far fa-envelope icon-modify"></i>
-                         <input type="text" id="contatolog" placeholder="E-mail ou Telefone" autocomplete="off">
+                         <i class="far fa-user icon-modify"></i>
+                         <input type="text" id="nomelog" placeholder="Nome Completo" autocomplete="off" v-model="log.receptNome">
                          </label>
                     
                          <label class="label-input" for="">
                          <i class="fas fa-lock icon-modify"></i>
-                         <input type="password" id="senhalog" placeholder="Senha" autocomplete="off">
+                         <input type="password" id="senhalog" placeholder="Senha" autocomplete="off" v-model="log.receptSenha">
                          </label>
                     
                          <a class="password" href="#">Esqueceu sua senha?</a>
@@ -466,6 +466,8 @@ http://www.tooplate.com/view/2098-health
 				     contatoUsuario: '',
 				     senhaUsuario: '',
 				     confsenhaUsuario: '',
+                         receptName: '',
+                         receptSenha: '',
                     },
                     isEdit: false
                },
@@ -558,9 +560,7 @@ http://www.tooplate.com/view/2098-health
                          }
                     },
                     logaUsuario(log){
-                         let senha = document.getElementById('senhalog');
-                         let contato = document.getElementById('contatolog');
-                         if (log.senhaUsuario != senha && log.contatoUsuario != contato) {
+                         if (log.receptSenha != log.senhaUsuario && log.receptName != log.nomeUsuario) {
                               window.alert('Nenhum usuário encontrado com estes dados!');
                          }else{
                               window.alert('Seja bem-vindo'+log.nomeUsuario+'!')
