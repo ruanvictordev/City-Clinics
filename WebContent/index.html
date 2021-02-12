@@ -542,7 +542,7 @@ http://www.tooplate.com/view/2098-health
                          if (log.senhaUsuario != log.confsenhaUsuario) {
                               window.alert('Sua senha e confirmação de senha são diferentes!')
                          }
-                         if (log.nomeUsuario != '' && log.contatoUsuario != '' && log.senhaUsuario != ''&& log.confsenhaUsuario != '' && log.senhaUsuario.length >= 8) {
+                         if (log.nomeUsuario != '' && log.contatoUsuario != '' && log.senhaUsuario != ''&& log.confsenhaUsuario != '' && log.senhaUsuario.length >= 8 && log.senhaUsuario == log.confsenhaUsuario) {
                               let logs = localStorage.getItem('logsApp');
                               log.id = new Date().getTime();
                               if (logs) {
