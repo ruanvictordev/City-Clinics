@@ -466,33 +466,29 @@ http://www.tooplate.com/view/2098-health
                },
                methods: {
                     saveClinic(clinica){
-                         if (clinica.nomeClinica == '') {
-		                    window.alert('Preencha o campo "Nome Da Clínica"');
-	                    }
-                         if (clinica.descricaoClinica == '') {
-		                    window.alert('Preencha o campo "Descrição Da Clínica"');
-	                    }
-                         if (clinica.telefoneClinica == '') {
-		                    window.alert('Preencha o campo "Telefone Da Clínica"');
-	                    }
-                         if (clinica.nomeClinica == '') {
-		                    window.alert('Preencha o campo "Nome Da Clínica"');
-                         }       
-                         //console.log(clinica)
-                         let clinics = localStorage.getItem('clinicsApp');
-                         clinica.id = new Date().getTime();
-                         if(clinics){
-                              //atulizar clinicas no localStorage
-                              clinics = JSON.parse(clinics);
-                              clinics.push(clinica);
-                         }else{
-                              clinics = [clinica]; //p/ novo cadastro
-                         }
-                         this.clinics = clinics;
-                         //ou atualizar localStorage independente de nova clínica ou nova adição
-                         localStorage.setItem('clinicsApp', JSON.stringify(clinics))
+                         if (clinica.nomeClinica == ''
+                          || clinica.descricaoClinica == ''
+                          || clinica.telefoneClinica == '' ) {
+		                    window.alert('Preencha todos os campos');
+	                    }else{
+               
+                                
+                              //console.log(clinica)
+                              let clinics = localStorage.getItem('clinicsApp');
+                              clinica.id = new Date().getTime();
+                              if(clinics){
+                                   //atulizar clinicas no localStorage
+                                   clinics = JSON.parse(clinics);
+                                   clinics.push(clinica);
+                              }else{
+                                   clinics = [clinica]; //p/ novo cadastro
+                              }
+                              this.clinics = clinics;
+                              //ou atualizar localStorage independente de nova clínica ou nova adição
+                              localStorage.setItem('clinicsApp', JSON.stringify(clinics))
 
-                         location.reload();
+                              location.reload();
+                         }     
                     },
                     removeClinica(clinicaId){
                          let clinics = localStorage.getItem('clinicsApp');
