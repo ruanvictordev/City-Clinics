@@ -25,6 +25,9 @@ The <strong>City Clinics</strong> was implemented using these features.
 * [Css](https://www.w3c.br/divulgacao/guiasreferencia/css2/) - <strong>This language participated in the creation of the page style</strong>
 * [JavaScript](https://developer.mozilla.org/pt-BR/docs/Web/JavaScript) - <strong>Used to create a more user-friendly front end.</strong>
 
+### Execute
+
+You can execute when click in this link: https://ruancarreirogomes.github.io/City-Clinics/
 
 ### Installation
 
