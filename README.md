@@ -27,7 +27,7 @@ The <strong>City Clinics</strong> was implemented using these features.
 
 ### Execute
 
-You can execute when click in this link: https://ruancarreirogomes.github.io/City-Clinics/
+You can execute when click in this link: https://ruancarreirogomes.github.io/City-Clinics/WebContent/
 
 ### Installation
 
